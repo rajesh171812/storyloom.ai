@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Toast preview</title>
+<style>
+  html, body { margin: 0; }
+  body { padding: var(--space-4); color: var(--color-text-primary); font: var(--font-body); letter-spacing: var(--letter-spacing-body); -webkit-font-smoothing: antialiased; }
+  .pv-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+  .pv-col { display: grid; gap: var(--space-4); }
+  .pv-cap { margin: 0 0 var(--space-2); font: var(--font-caption); letter-spacing: var(--letter-spacing-caption); color: var(--color-text-secondary); }
+  .pv-sec + .pv-sec { margin-top: var(--space-5); }
+  .pv-narrow { max-width: 360px; }
+  .pv-half { max-width: 480px; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../../tokens.css">
+<link rel="stylesheet" href="../../../bundle.css">
+<script>try{var t=parent.document.documentElement.getAttribute("data-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body class="bl-body">
+<div class="pv-col">
+<div class="bl-toast" role="status"><svg class="bl-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Invoice sent to Northwind Ltd.</span><button class="bl-btn bl-btn--ghost bl-btn--sm" type="button">Undo</button></div>
+<div class="bl-toast" role="status"><svg class="bl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Draft saved.</span><button class="bl-btn bl-btn--ghost bl-btn--icon bl-btn--sm" type="button" aria-label="Dismiss"><svg class="bl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Skeleton preview</title>
+<style>
+  html, body { margin: 0; }
+  body { padding: var(--space-4); color: var(--color-text-primary); font: var(--font-body); letter-spacing: var(--letter-spacing-body); -webkit-font-smoothing: antialiased; }
+  .pv-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+  .pv-col { display: grid; gap: var(--space-4); }
+  .pv-cap { margin: 0 0 var(--space-2); font: var(--font-caption); letter-spacing: var(--letter-spacing-caption); color: var(--color-text-secondary); }
+  .pv-sec + .pv-sec { margin-top: var(--space-5); }
+  .pv-narrow { max-width: 360px; }
+  .pv-half { max-width: 480px; }
+  .pv-sk { display: grid; grid-template-columns: auto 1fr; gap: var(--space-4); align-items: center; }
+  .pv-sk__lines { display: grid; gap: var(--space-2); }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../../tokens.css">
+<link rel="stylesheet" href="../../../bundle.css">
+<script>try{var t=parent.document.documentElement.getAttribute("data-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body class="bl-body">
+<div class="bl-card pv-half" aria-busy="true" aria-label="Loading project">
+<div class="pv-sk">
+<span class="bl-skeleton" style="width: var(--space-8); height: var(--space-8); border-radius: var(--radius-full)"></span>
+<div class="pv-sk__lines"><span class="bl-skeleton" style="width: 60%; height: var(--space-4)"></span><span class="bl-skeleton" style="width: 40%; height: var(--space-3)"></span></div>
+</div>
+<div class="pv-sk__lines" style="margin-top: var(--space-4)"><span class="bl-skeleton" style="width: 100%; height: var(--space-3)"></span><span class="bl-skeleton" style="width: 92%; height: var(--space-3)"></span><span class="bl-skeleton" style="width: 70%; height: var(--space-3)"></span></div>
+</div>
+</body>
+</html>

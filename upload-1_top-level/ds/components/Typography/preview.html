@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Typography preview</title>
+<style>
+  html, body { margin: 0; }
+  body { padding: var(--space-4); color: var(--color-text-primary); font: var(--font-body); letter-spacing: var(--letter-spacing-body); -webkit-font-smoothing: antialiased; }
+  .pv-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+  .pv-col { display: grid; gap: var(--space-4); }
+  .pv-cap { margin: 0 0 var(--space-2); font: var(--font-caption); letter-spacing: var(--letter-spacing-caption); color: var(--color-text-secondary); }
+  .pv-sec + .pv-sec { margin-top: var(--space-5); }
+  .pv-narrow { max-width: 360px; }
+  .pv-half { max-width: 480px; }
+  .pv-type { display: grid; gap: var(--space-5); }
+  .pv-type p, .pv-type h1, .pv-type h2, .pv-type h3, .pv-type h4 { margin: 0; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../../tokens.css">
+<link rel="stylesheet" href="../../../bundle.css">
+<script>try{var t=parent.document.documentElement.getAttribute("data-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body class="bl-body">
+<div class="pv-type">
+<div><p class="pv-cap">bl-display: Bricolage Grotesque 700, 3.5rem / 3.75rem</p><p class="bl-display">Invoices, calmer</p></div>
+<div><p class="pv-cap">bl-h1: 700, 2.5rem / 3rem</p><h1 class="bl-h1">Project overview</h1></div>
+<div><p class="pv-cap">bl-h2: 600, 2rem / 2.5rem</p><h2 class="bl-h2">Billing and invoices</h2></div>
+<div><p class="pv-cap">bl-h3: 600, 1.5rem / 2rem</p><h3 class="bl-h3">Team members</h3></div>
+<div><p class="pv-cap">bl-h4: 600, 1.25rem / 1.75rem</p><h4 class="bl-h4">Recent activity</h4></div>
+<div><p class="pv-cap">bl-body-lg: Hanken Grotesk 400, 1.125rem / 1.75rem</p><p class="bl-body-lg bl-prose">Send an invoice in under a minute and see when it is opened.</p></div>
+<div><p class="pv-cap">Default body: 1rem / 1.5rem, inside bl-prose (68ch)</p><p class="bl-prose">Invoices you send appear in this list. Change a due date at any time; the customer sees the new date straight away.</p></div>
+<div><p class="pv-cap">bl-body-sm and bl-text-secondary</p><p class="bl-body-sm bl-text-secondary">Last edited 14 October 2026 by Ana Ruiz</p></div>
+<div><p class="pv-cap">bl-caption</p><p class="bl-caption bl-text-secondary">Updated 3 minutes ago</p></div>
+<div><p class="pv-cap">bl-code, bl-link</p><p>Use <code class="bl-code">--color-text-primary</code> for text, and <a class="bl-link" href="#">read the guidelines</a> or <a class="bl-link is-hover" href="#">see the hover state</a>.</p></div>
+</div>
+</body>
+</html>
