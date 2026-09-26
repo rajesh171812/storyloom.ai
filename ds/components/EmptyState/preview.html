@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>EmptyState preview</title>
+<style>
+  html, body { margin: 0; }
+  body { padding: var(--space-4); color: var(--color-text-primary); font: var(--font-body); letter-spacing: var(--letter-spacing-body); -webkit-font-smoothing: antialiased; }
+  .pv-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+  .pv-col { display: grid; gap: var(--space-4); }
+  .pv-cap { margin: 0 0 var(--space-2); font: var(--font-caption); letter-spacing: var(--letter-spacing-caption); color: var(--color-text-secondary); }
+  .pv-sec + .pv-sec { margin-top: var(--space-5); }
+  .pv-narrow { max-width: 360px; }
+  .pv-half { max-width: 480px; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../../tokens.css">
+<link rel="stylesheet" href="../../../bundle.css">
+<script>try{var t=parent.document.documentElement.getAttribute("data-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body class="bl-body">
+<div class="bl-empty">
+<span class="bl-empty__icon"><svg class="bl-icon bl-icon--lg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg></span>
+<h3>No invoices yet</h3>
+<p>Invoices you send will appear here.</p>
+<button class="bl-btn bl-btn--primary" type="button">Create invoice</button>
+</div>
+</body>
+</html>

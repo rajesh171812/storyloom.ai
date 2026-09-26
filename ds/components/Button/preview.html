@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Button preview</title>
+<style>
+  html, body { margin: 0; }
+  body { padding: var(--space-4); color: var(--color-text-primary); font: var(--font-body); letter-spacing: var(--letter-spacing-body); -webkit-font-smoothing: antialiased; }
+  .pv-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+  .pv-col { display: grid; gap: var(--space-4); }
+  .pv-cap { margin: 0 0 var(--space-2); font: var(--font-caption); letter-spacing: var(--letter-spacing-caption); color: var(--color-text-secondary); }
+  .pv-sec + .pv-sec { margin-top: var(--space-5); }
+  .pv-narrow { max-width: 360px; }
+  .pv-half { max-width: 480px; }
+  .pv-w { width: 280px; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../../tokens.css">
+<link rel="stylesheet" href="../../../bundle.css">
+<script>try{var t=parent.document.documentElement.getAttribute("data-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body class="bl-body">
+<div class="pv-sec"><p class="pv-cap">Variants</p><div class="pv-row"><button class="bl-btn bl-btn--primary" type="button">Send invoice</button>
+<button class="bl-btn bl-btn--secondary" type="button">Save draft</button>
+<button class="bl-btn bl-btn--tertiary" type="button">Skip step</button>
+<button class="bl-btn bl-btn--ghost" type="button">Edit profile</button>
+<button class="bl-btn bl-btn--destructive" type="button">Delete project</button></div></div><div class="pv-sec"><p class="pv-cap">Sizes: sm 32, md 40, lg 48</p><div class="pv-row"><button class="bl-btn bl-btn--primary bl-btn--sm" type="button">Small</button>
+<button class="bl-btn bl-btn--primary" type="button">Default</button>
+<button class="bl-btn bl-btn--primary bl-btn--lg" type="button">Large</button></div></div><div class="pv-sec"><p class="pv-cap">States on primary: default, hover, pressed, focus, disabled, loading</p><div class="pv-row"><button class="bl-btn bl-btn--primary" type="button">Default</button>
+<button class="bl-btn bl-btn--primary is-hover" type="button">Hover</button>
+<button class="bl-btn bl-btn--primary is-active" type="button">Pressed</button>
+<button class="bl-btn bl-btn--primary is-focus" type="button">Focus</button>
+<button class="bl-btn bl-btn--primary" type="button" disabled>Disabled</button>
+<button class="bl-btn bl-btn--primary" type="button" aria-busy="true"><span class="bl-spinner bl-spinner--sm" aria-hidden="true"></span><span>Sending</span></button></div></div><div class="pv-sec"><p class="pv-cap">States on secondary and destructive</p><div class="pv-row"><button class="bl-btn bl-btn--secondary is-hover" type="button">Hover</button>
+<button class="bl-btn bl-btn--secondary is-active" type="button">Pressed</button>
+<button class="bl-btn bl-btn--secondary" type="button" disabled>Disabled</button>
+<button class="bl-btn bl-btn--destructive is-hover" type="button">Hover</button>
+<button class="bl-btn bl-btn--destructive" type="button" disabled>Disabled</button></div></div><div class="pv-sec"><p class="pv-cap">With icon, icon-only, and full width</p><div class="pv-row"><button class="bl-btn bl-btn--primary" type="button"><svg class="bl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg><span>New project</span></button>
+<button class="bl-btn bl-btn--secondary bl-btn--icon" type="button" aria-label="Search"><svg class="bl-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
+<button class="bl-btn bl-btn--ghost bl-btn--icon bl-btn--sm" type="button" aria-label="Close"><svg class="bl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+<div class="pv-w"><button class="bl-btn bl-btn--primary bl-btn--block" type="button">Create account</button></div></div></div>
+</body>
+</html>

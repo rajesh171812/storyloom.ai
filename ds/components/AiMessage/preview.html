@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AiMessage preview</title>
+<style>
+  html, body { margin: 0; }
+  body { padding: var(--space-4); color: var(--color-text-primary); font: var(--font-body); letter-spacing: var(--letter-spacing-body); -webkit-font-smoothing: antialiased; }
+  .pv-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+  .pv-col { display: grid; gap: var(--space-4); }
+  .pv-cap { margin: 0 0 var(--space-2); font: var(--font-caption); letter-spacing: var(--letter-spacing-caption); color: var(--color-text-secondary); }
+  .pv-sec + .pv-sec { margin-top: var(--space-5); }
+  .pv-narrow { max-width: 360px; }
+  .pv-half { max-width: 480px; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../../tokens.css">
+<link rel="stylesheet" href="../../../bundle.css">
+<script>try{var t=parent.document.documentElement.getAttribute("data-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body class="bl-body">
+<article class="bl-ai-msg pv-half" aria-label="Assistant message">
+<div class="bl-ai-msg__who"><span class="bl-avatar bl-avatar--sm" aria-hidden="true">AI</span><span>Assistant</span><span class="bl-badge bl-badge--info"><svg class="bl-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>AI-generated</span></div>
+<p class="bl-ai-msg__body">Three invoices are overdue, totalling $2,195.50.<a class="bl-cite" href="#s1" aria-label="Source 1">1</a> The oldest is INV-1040, due 2 October 2026.<a class="bl-cite" href="#s2" aria-label="Source 2">2</a></p>
+<div class="bl-ai-msg__meta"><span>Used: invoices and customers.</span>
+<button class="bl-btn bl-btn--ghost bl-btn--sm" type="button"><svg class="bl-icon bl-icon--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg><span>Regenerate</span></button>
+<button class="bl-btn bl-btn--ghost bl-btn--sm" type="button"><svg class="bl-icon bl-icon--sm" viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg><span>Copy</span></button></div>
+<ol class="bl-stack" style="list-style: none; margin: 0; padding: 0; --stack-gap: var(--space-2)">
+<li class="bl-source" id="s1"><span class="bl-cite" aria-hidden="true">1</span><span>Invoices list, updated 3 minutes ago</span></li>
+<li class="bl-source" id="s2"><span class="bl-cite" aria-hidden="true">2</span><span>INV-1040 for Northwind Ltd</span></li>
+</ol>
+</article>
+<article class="bl-ai-msg pv-half" style="margin-top: var(--space-5)" aria-label="Assistant message, in progress">
+<div class="bl-ai-msg__who"><span class="bl-avatar bl-avatar--sm" aria-hidden="true">AI</span><span>Assistant</span><span class="bl-badge bl-badge--info"><svg class="bl-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>AI-generated</span></div>
+<p class="bl-ai-msg__body">Checking your invoices for anything due this week<span class="bl-stream-cursor" aria-hidden="true"></span></p>
+</article>
+</body>
+</html>

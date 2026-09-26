@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tabs preview</title>
+<style>
+  html, body { margin: 0; }
+  body { padding: var(--space-4); color: var(--color-text-primary); font: var(--font-body); letter-spacing: var(--letter-spacing-body); -webkit-font-smoothing: antialiased; }
+  .pv-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+  .pv-col { display: grid; gap: var(--space-4); }
+  .pv-cap { margin: 0 0 var(--space-2); font: var(--font-caption); letter-spacing: var(--letter-spacing-caption); color: var(--color-text-secondary); }
+  .pv-sec + .pv-sec { margin-top: var(--space-5); }
+  .pv-narrow { max-width: 360px; }
+  .pv-half { max-width: 480px; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../../tokens.css">
+<link rel="stylesheet" href="../../../bundle.css">
+<script>try{var t=parent.document.documentElement.getAttribute("data-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body class="bl-body">
+<div class="bl-tabs" role="tablist" aria-label="Project sections">
+<button class="bl-tab" type="button" role="tab" id="tb1" aria-selected="true" aria-controls="tp1">Overview</button>
+<button class="bl-tab" type="button" role="tab" id="tb2" aria-selected="false" tabindex="-1">Activity</button>
+<button class="bl-tab is-hover" type="button" role="tab" id="tb3" aria-selected="false" tabindex="-1">Files</button>
+<button class="bl-tab" type="button" role="tab" id="tb4" aria-selected="false" tabindex="-1">Settings</button>
+</div>
+<div role="tabpanel" id="tp1" aria-labelledby="tb1" tabindex="0" style="padding-top: var(--space-4)"><p class="bl-body-sm bl-text-secondary" style="margin:0">Overview of Website redesign: 12 tasks, 3 due this week.</p></div>
+</body>
+</html>

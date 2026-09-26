@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Storyloom Design System</title>
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--color-background-default); color: var(--color-text-primary); font-family: var(--font-family-sans); overflow: hidden; }
+  .cover { position: relative; height: 288px; overflow: hidden; }
+  /* the composition: a 480-wide box on the right half of the 960 layout, clear of the name */
+  .art { position: absolute; top: 0; left: 480px; width: 480px; height: 288px; overflow: hidden; }
+  .art svg { display: block; width: 480px; height: 288px; }
+  .brand { fill: var(--color-action-primary-bg); }
+  .accent { fill: var(--color-accent-bg); }
+  .tint { fill: var(--color-primary-200); }
+  .ink { fill: var(--color-surface-inverse); }
+  .royal { fill: var(--color-primary-500); }
+  .cut { fill: var(--color-background-default); }
+  .blk { rx: var(--radius-lg); }
+  .words { position: absolute; left: var(--space-6); bottom: var(--space-6); max-width: 440px; }
+  .name { margin: 0; font-family: var(--font-family-display); font-size: 72px; line-height: .95; font-weight: 700; letter-spacing: -.02em; color: var(--color-text-primary); }
+  .tag { margin: var(--space-2) 0 0 4px; font-size: 14px; line-height: 20px; color: var(--color-text-secondary); }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../../tokens.css">
+<link rel="stylesheet" href="../../../bundle.css">
+<script>try{var t=parent.document.documentElement.getAttribute("data-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body class="bl-body">
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      color-action-primary-bg (Royal blue) 144x272 bled off the top · color-accent-bg (lavender) 128x160 · color-primary-200 tint 128x32 · color-surface-inverse ink 176x224 bled off the right; about 35% of 960x288
+  arrangement one tall blue slab with satellites, bottoms on one line space-6 above the edge, space-4 gutters
+  pattern     dot grid at a space-5 pitch, from a 4px-base, mono-typed spec: 40 ground-colored dots cut out of the ink block, 15 out of the blue slab
+  scales      sides are multiples of space-4; corners radius-lg; dot radius 2 = half of space-1
+-->
+<rect class="brand blk" x="16" y="-16" width="144" height="272"/>
+<rect class="royal blk" x="176" y="48" width="128" height="32"/>
+<rect class="accent blk" x="176" y="96" width="128" height="160"/>
+<rect class="ink blk" x="320" y="32" width="176" height="224"/>
+<circle class="cut" cx="344" cy="56" r="2"/>
+<circle class="cut" cx="368" cy="56" r="2"/>
+<circle class="cut" cx="392" cy="56" r="2"/>
+<circle class="cut" cx="416" cy="56" r="2"/>
+<circle class="cut" cx="440" cy="56" r="2"/>
+<circle class="cut" cx="344" cy="80" r="2"/>
+<circle class="cut" cx="368" cy="80" r="2"/>
+<circle class="cut" cx="392" cy="80" r="2"/>
+<circle class="cut" cx="416" cy="80" r="2"/>
+<circle class="cut" cx="440" cy="80" r="2"/>
+<circle class="cut" cx="344" cy="104" r="2"/>
+<circle class="cut" cx="368" cy="104" r="2"/>
+<circle class="cut" cx="392" cy="104" r="2"/>
+<circle class="cut" cx="416" cy="104" r="2"/>
+<circle class="cut" cx="440" cy="104" r="2"/>
+<circle class="cut" cx="344" cy="128" r="2"/>
+<circle class="cut" cx="368" cy="128" r="2"/>
+<circle class="cut" cx="392" cy="128" r="2"/>
+<circle class="cut" cx="416" cy="128" r="2"/>
+<circle class="cut" cx="440" cy="128" r="2"/>
+<circle class="cut" cx="344" cy="152" r="2"/>
+<circle class="cut" cx="368" cy="152" r="2"/>
+<circle class="cut" cx="392" cy="152" r="2"/>
+<circle class="cut" cx="416" cy="152" r="2"/>
+<circle class="cut" cx="440" cy="152" r="2"/>
+<circle class="cut" cx="344" cy="176" r="2"/>
+<circle class="cut" cx="368" cy="176" r="2"/>
+<circle class="cut" cx="392" cy="176" r="2"/>
+<circle class="cut" cx="416" cy="176" r="2"/>
+<circle class="cut" cx="440" cy="176" r="2"/>
+<circle class="cut" cx="344" cy="200" r="2"/>
+<circle class="cut" cx="368" cy="200" r="2"/>
+<circle class="cut" cx="392" cy="200" r="2"/>
+<circle class="cut" cx="416" cy="200" r="2"/>
+<circle class="cut" cx="440" cy="200" r="2"/>
+<circle class="cut" cx="344" cy="224" r="2"/>
+<circle class="cut" cx="368" cy="224" r="2"/>
+<circle class="cut" cx="392" cy="224" r="2"/>
+<circle class="cut" cx="416" cy="224" r="2"/>
+<circle class="cut" cx="440" cy="224" r="2"/>
+<circle class="cut" cx="40" cy="128" r="2"/>
+<circle class="cut" cx="64" cy="128" r="2"/>
+<circle class="cut" cx="88" cy="128" r="2"/>
+<circle class="cut" cx="40" cy="152" r="2"/>
+<circle class="cut" cx="64" cy="152" r="2"/>
+<circle class="cut" cx="88" cy="152" r="2"/>
+<circle class="cut" cx="40" cy="176" r="2"/>
+<circle class="cut" cx="64" cy="176" r="2"/>
+<circle class="cut" cx="88" cy="176" r="2"/>
+<circle class="cut" cx="40" cy="200" r="2"/>
+<circle class="cut" cx="64" cy="200" r="2"/>
+<circle class="cut" cx="88" cy="200" r="2"/>
+<circle class="cut" cx="40" cy="224" r="2"/>
+<circle class="cut" cx="64" cy="224" r="2"/>
+<circle class="cut" cx="88" cy="224" r="2"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">Story<br>loom</h1>
+<p class="tag">Storyloom Design System · Your story. Structured. Designed. Presented.</p>
+</div>
+</div>
+</body>
+</html>

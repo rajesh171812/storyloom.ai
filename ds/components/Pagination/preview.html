@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pagination preview</title>
+<style>
+  html, body { margin: 0; }
+  body { padding: var(--space-4); color: var(--color-text-primary); font: var(--font-body); letter-spacing: var(--letter-spacing-body); -webkit-font-smoothing: antialiased; }
+  .pv-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+  .pv-col { display: grid; gap: var(--space-4); }
+  .pv-cap { margin: 0 0 var(--space-2); font: var(--font-caption); letter-spacing: var(--letter-spacing-caption); color: var(--color-text-secondary); }
+  .pv-sec + .pv-sec { margin-top: var(--space-5); }
+  .pv-narrow { max-width: 360px; }
+  .pv-half { max-width: 480px; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../../tokens.css">
+<link rel="stylesheet" href="../../../bundle.css">
+<script>try{var t=parent.document.documentElement.getAttribute("data-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body class="bl-body">
+<nav class="bl-pagination" aria-label="Pagination">
+<button class="bl-btn bl-btn--ghost bl-btn--icon" type="button" aria-label="Previous page" disabled><svg class="bl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+<button class="bl-btn bl-btn--ghost" type="button" aria-label="Page 1">1</button>
+<button class="bl-btn bl-btn--ghost" type="button" aria-label="Page 2">2</button>
+<button class="bl-btn bl-btn--ghost" type="button" aria-label="Page 3, current page" aria-current="page">3</button>
+<button class="bl-btn bl-btn--ghost" type="button" aria-label="Page 4">4</button>
+<button class="bl-btn bl-btn--ghost" type="button" aria-label="Page 5">5</button>
+<button class="bl-btn bl-btn--ghost bl-btn--icon" type="button" aria-label="Next page"><svg class="bl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+</nav>
+</body>
+</html>
