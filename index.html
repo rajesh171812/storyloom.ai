@@ -100,6 +100,9 @@
   /* Overview */
   .cx-hero-home { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: var(--space-6); align-items: center; padding: var(--space-8); background: var(--color-surface-default); }
   .cx-hero-home .bl-display { font-size: clamp(2rem, 3vw, 2.75rem); line-height: 1.1; }
+  .cx-mascot { display: flex; justify-content: center; align-items: center; }
+  .cx-mascot img { width: 100%; max-width: 420px; height: auto; }
+  @media (max-width: 860px) { .cx-mascot img { max-width: 260px; } }
   .cx-collage { position: relative; aspect-ratio: 4 / 3; }
   .cx-collage img { position: absolute; width: 78%; border-radius: var(--radius-md); box-shadow: var(--shadow-2); border: var(--border-width-1) solid var(--color-border-default); }
   .cx-collage img:nth-child(1) { left: 0; top: 0; }
@@ -2720,7 +2723,7 @@
         "13 / 20 (metadata only)"
       ]
     ],
-    "spacing": "4px scale: space-1 4 ... space-11 96. Slide margin space-8 (48). Card padding space-5 (24). Gaps space-4 (16).",
+    "spacing": "4px scale: space-1 4 ... space-11 96. Slide margin 72 px (0.75 in). Card padding 40 px (0.4 in). Gaps between cards 28 px (0.3 in). Slide content sits between 1.85 in and 6.3 in, so there is always air above the source line and footer.",
     "radius": "radius-md 8 (callouts), radius-lg 12 (cards). Device frames keep their own radius."
   },
   "storyRules": [
@@ -3089,7 +3092,7 @@
         <p class="cx-lead">Storyloom AI Presentation is the governed library an AI reads before it builds a deck: story structures, slide templates, components, device frames and the rules that hold them together. Built on the Storyloom Design System.</p>
         <div class="cx-actions"><a class="bl-btn bl-btn--primary" href="#download">${ico("download")}Get the starter package</a><a class="bl-btn bl-btn--secondary" href="#workflow">See the workflow</a></div>
       </div>
-      <div class="cx-collage" aria-hidden="true"><img src="img/slides/s-04.jpg" alt=""><img src="img/slides/s-08.jpg" alt=""><img src="img/slides/s-02.jpg" alt=""></div>
+      <div class="cx-mascot"><img src="img/mascot.png" alt="The Storyloom mascot, a knitted character holding up a chart" width="513" height="400"></div>
     </div>
     ${sec("at-a-glance", "At a glance", `<div class="cx-stats">
       <div><b>${R.presentationTypes.length}</b><span>Presentation types</span></div>
