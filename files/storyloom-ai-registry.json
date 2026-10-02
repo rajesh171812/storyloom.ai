@@ -2348,7 +2348,7 @@
         "13 / 20 (metadata only)"
       ]
     ],
-    "spacing": "4px scale: space-1 4 ... space-11 96. Slide margin space-8 (48). Card padding space-5 (24). Gaps space-4 (16).",
+    "spacing": "4px scale: space-1 4 ... space-11 96. Slide margin 72 px (0.75 in). Card padding 40 px (0.4 in). Gaps between cards 28 px (0.3 in). Slide content sits between 1.85 in and 6.3 in, so there is always air above the source line and footer.",
     "radius": "radius-md 8 (callouts), radius-lg 12 (cards). Device frames keep their own radius."
   },
   "storyRules": [

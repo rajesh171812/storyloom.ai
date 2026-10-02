@@ -385,7 +385,7 @@ Status (fg / bg): success #007a2c/#e5f7ec; warning #a84600/#fff0e5; error #b0002
 
 Slide type scale (1280×720 canvas):
 
-- Slide title: `h1` · Bricolage Grotesque 700 · 40 / 48
+- Slide title: `h1` · Bricolage Grotesque 700 · 37 / 44 on slides (28 pt), kept to one line
 - Section title: `display` · Bricolage Grotesque 700 · 56 / 60
 - Card title: `h4` · Bricolage Grotesque 600 · 20 / 28
 - KPI number: `display` · Bricolage Grotesque 700 · 56 / 60
@@ -394,7 +394,7 @@ Slide type scale (1280×720 canvas):
 - Source / footnote: `body-sm` · Hanken Grotesk 400 · 14 / 20 (minimum on slides)
 - IDs, data: `code` · IBM Plex Mono 400 · 13 / 20 (metadata only)
 
-Spacing: 4px scale: space-1 4 ... space-11 96. Slide margin space-8 (48). Card padding space-5 (24). Gaps space-4 (16).
+Spacing: 4px scale: space-1 4 ... space-11 96. Slide margin 72 px (0.75 in). Card padding 40 px (0.4 in). Gaps between cards 28 px (0.3 in). Slide content sits between 1.85 in and 6.3 in, so there is always air above the source line and footer.
 Radius: radius-md 8 (callouts), radius-lg 12 (cards). Device frames keep their own radius.
 Fonts: Bricolage Grotesque (display), Hanken Grotesk (body), IBM Plex Mono (IDs/data). Use semantic tokens, never raw primitives.
 
